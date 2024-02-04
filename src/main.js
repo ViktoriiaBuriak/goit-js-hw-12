@@ -41,7 +41,15 @@ document.addEventListener('DOMContentLoaded', function () {
     await loadGallery();
     page++;
     loader.style.display = 'none';
-    console.log(loader);
+
+    const galleryItems = document.querySelector('.gallery-item');
+    const galleryItemRect = galleryItems.getBoundingClientRect();
+    const galleryItemHeight = galleryItemRect.height + 24;
+
+    window.scrollBy({
+      top: galleryItemHeight * 2,
+      behavior: 'smooth',
+    });
   });
 
   async function loadGallery() {

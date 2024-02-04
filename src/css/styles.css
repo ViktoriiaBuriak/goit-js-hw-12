@@ -111,6 +111,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   width: calc((100% - 48px) / 3);
+  height: 300px;
 }
 
 .gallery-image {
@@ -128,28 +129,29 @@ input::placeholder {
 }
 
 .caption-list li {
-text-align: center;
+  text-align: center;
 }
 
 .load-btn {
   display: none;
   border: none;
   border-radius: 8px;
-background-color: #4E75FF;
-color: #FFF;
-font-family: Montserrat;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.04em;
-padding: 8px 16px;
-margin-left: auto;
-margin-right: auto;
-transition: background-color 300ms ease;
+  background-color: #4e75ff;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 300ms ease;
 }
 
-.load-btn:hover, .load-btn:focus {
+.load-btn:hover,
+.load-btn:focus {
   background-color: #6c8cff;
 }
 
